@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validaciones Formulario</title>
+  
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+</head>
+<body>
+	<div class="custom-overlay-panel">
+		<div class="custom-toast-container"></div>
+	</div>
+  <div class="container">
+    <span></span>
+    <div class="card card-form">
+      <h2>
+        <span class="text-muted">Formulario para Validación</span>
+      </h2>
+      <form action="" class="form" novalidate>
+        <div class="group">
+          <label for="carnet">Carnet</label>
+          <input type="number" name="carnet" id="carnet" placeholder="1490-17-18027" pattern="[0-9]" required />
+          <div class="invalid">Completa este campo con dejando entre 10 a 20 caracteres</div>
+        </div>
+        <div class="group">
+          <label for="firstName">Primer Nombre</label>
+          <input type="text" name="firstName" id="firstName" placeholder="Carlos" required />
+          <div class="invalid">Completa este campo con dejando entre 3 a 20 caracteres</div>
+        </div>
+        <div class="group">
+          <label for="secondName">Segundo Nombre</label>
+          <input type="text" name="secondName" id="secondName" placeholder="Daniel" required />
+          <div class="invalid">Completa este campo con dejando entre 3 a 20 caracteres</div>
+        </div>
+        <div class="group">
+          <label for="firstSurname">Primer Apellido</label>
+          <input type="text" name="firstSurname" id="firstSurname" placeholder="Marcucci" required />
+          <div class="invalid">Completa este campo con dejando entre 3 a 20 caracteres</div>
+        </div>
+        <div class="group">
+          <label for="secondSurname">Segundo Apellido</label>
+          <input type="text" name="secondSurname" id="secondSurname" placeholder="Rivera" required />
+          <div class="invalid">Completa este campo con dejando entre 3 a 20 caracteres</div>
+        </div>
+        <div class="group">
+          <label for="dateBirth">Fecha de nacimiento</label>
+          <input type="date" name="dateBirth" id="dateBirth" required />
+          <div class="invalid">Debe ingresar ser un valor válido para fecha</div>
+        </div>
+        <div class="group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" name="email" id="email" placeholder="example@mail.com" required />
+          <div class="invalid">Debe ingresar ser un valor válido para email</div>
+        </div>
+        <div class="group">
+          <label for="DPI">DPI</label>
+          <input type="number" name="DPI" id="DPI" placeholder="0101 01010 0101" pattern="[0-9]" required />
+          <div class="invalid">Completa este campo sin exceder 10 caracteres</div>
+        </div>
+        <div class="group">
+          <label for="passport">Pasaporte</label>
+          <input type="number" name="passport" id="passport" placeholder="0101 01010 0101" pattern="[0-9]" required />
+          <div class="invalid">Completa este campo sin exceder 10 caracteres</div>
+        </div>
+        <div class="group">
+          <label for="countries">País</label>
+          <select name="countries" id="countries">
+            <option value="">Seleccionar...</option>
+          </select>
+          <div class="invalid">Debe seleccionar algún país</div>
+        </div>
+        <div class="group group-25">
+          <label for="addressAvenue">Número de avenida</label>
+          <input type="number" name="addressAvenue" id="addressAvenue" placeholder="0" pattern="[0-9]" required />
+          <div class="invalid">Completa este campo</div>
+        </div>
+        <div class="group group-25">
+          <label for="addressHouse">Número de casa</label>
+          <input type="number" name="addressHouse" id="addressHouse" placeholder="0" pattern="[0-9]" required />
+          <div class="invalid">Completa este campo</div>
+        </div>
+        <div class="group group-25">
+          <label for="addressZone">Zona</label>
+          <input type="number" name="addressZone" id="addressZone" placeholder="0" pattern="[0-9]" required />
+          <div class="invalid">Completa este campo</div>
+        </div>
+        <div class="group group-25">
+          <label for="addressDepartament">Departamento</label>
+          <input type="text" name="addressDepartament" id="addressDepartament" placeholder="Ciudad" required />
+          <div class="invalid">Completa este campo</div>
+        </div>
+        <div class="group group-100 group-center">
+          <button type="submit" class="btn-validate" id="btnValidate">Validar</button>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <span>Carlos Daniel Marcucci Rivera</span>
+    </div>
+  </div>
+  <script src="./js/scripts.js"></script>
+</body>
+</html>
